@@ -72,5 +72,416 @@
   
     </div>
   </body>
+  <style>
+
+
+
+ 
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#przekonanie
+{
   
+  font-size:15px;
+  width:300px;
+  
+  font-family: "Raleway";
+  
+  background-color:#ffffff;
+}
+
+
+
+.guzik2137{
+   background-color:#ffffff;
+  padding:20px;
+  border:none;
+  border-radius:20px;
+  font-size:60px;
+  height:300px;
+  width:400px;
+  color:white;
+  transition-duration:0.5s;
+  text-decoration:none;
+
+  
+}
+
+img{
+  width:300px
+}
+
+
+
+
+
+#napispoczatek{
+  
+  font-size: 15px;
+  width:300px;
+  
+  font-family: "Raleway";
+  
+  background-color:#ffffff;
+}
+
+#napiskoniec{
+  
+  font-size: 15px;
+  width:300px;
+  
+  font-family: "Raleway";
+  
+  background-color:#ffffff;
+}
+
+
+
+body {
+ zoom: 2.3;
+  transform-origin: top left;
+  width: 100%; /* Dostosowanie szerokości */
+   overflow-x: hidden;  
+ width:301px;
+   max-width: 100vw;  /* Zapobiega rozszerzeniu strony poza szerokość okna */
+    font-family: "Raleway";
+  overflow-y: auto;
+  font-size: 20px;
+  
+}
+
+
+
+* {
+    box-sizing: border-box;  /* Kontroluje szerokość, uwzględniając padding */
+  
+}
+
+.guzikbegin{
+  background-color:#2d2e73;
+  font-family: "Raleway";
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  width:200px;
+  margin-left: 0px;
+  
+  height: 75px;
+  
+  
+  
+  
+}
+
+.guzikwiecejzobacz{
+  background-color:#e74c3c;
+  font-family: "Raleway";
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  width:200px;
+  margin-left: 0px;
+  
+  height: 50px;
+  
+  
+  
+  
+}
+
+
+
+
+#sugestie{
+  background-color:#2d2e73;
+  font-family: "Raleway";
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  width:200px;
+  margin-left: 0px;
+  
+  height: 75px;
+  
+  
+  
+  
+}
+
+
+.ajedenbutton{
+  color: white;
+  text-decoration: none;
+  
+  
+  
+}
+#adwamain{
+  font-family: "Raleway";
+  
+  
+}
+
+#normallogoimg{
+  width:300px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stylizacja kontenera */
+.audio-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap; /* Pozwala elementom dostosować się do mniejszych ekranów */
+}
+
+/* Stylizacja przycisku Play/Pause */
+.btnPlayPause {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Raleway";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Stylizacja paska postępu */
+.slider-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 120px; /* Minimalna szerokość, by nie zwijało się za bardzo */
+}
+
+input[type="range"] {
+    flex: 1;
+    appearance: none;
+    height: 4px;
+    background: linear-gradient(90deg, #1abc9c, #3498db);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Stylizacja suwaka */
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.3);
+}
+
+/* Stylizacja ikonki pobierania */
+.btnDownload {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+    margin-left: auto; /* Zapobiega ściskaniu innych elementów */
+}
+
+.btnDownload:hover {
+    color: #1abc9c;
+    transform: scale(1.2);
+}
+
+/* Dostosowanie do urządzeń mobilnych */
+@media (max-width: 400px) {
+    .audio-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .slider-wrapper {
+        width: 100%;
+    }
+    
+    .btnDownload {
+        margin-left: 0;
+    }
+}
+
+
+ #ad-container {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width: 300px;
+  z-index: 9999;
+  background: #000000;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  animation: fadeIn 1s forwards, fadeOut 1s 20s forwards;
+}
+
+#ad-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#close-ad {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+#ad-label {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 5px 0;
+  font-family: sans-serif;
+}
+
+.dotacjenapis {
+  display: flex;
+  gap: 10px; /* odstęp między przyciskami */
+}
+
+
+.dzk {
+  transform: scale(5.5);
+  transform-origin: top left;
+  width: 100%; /* Dostosowanie szerokości */
+   overflow-x: hidden;  /* Blokuje tylko poziome przewijanie */
+  overflow-y: auto;
+ width:301px;
+   max-width: 100vw;  /* Zapobiega rozszerzeniu strony poza szerokość okna */
+    font-family: "Raleway";
+}
+
+
+
+.menu-toggle {
+  width: 100%;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  flex-direction: column;
+  z-index: 999;
+}
+
+.menu a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid #555555;
+  text-align: center;
+}
+
+.menu a:hover {
+  background: #555555;
+}
+
+.menu.active {
+  display: flex;
+}
+
+#innedzwoniknav{
+  font-size: 20px;
+}
+    
+  </style>
 </html>
